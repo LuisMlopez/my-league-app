@@ -1,8 +1,0 @@
-{
-    "errorLens.onSave": true,
-    "eslint.format.enable": true,
-    "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
-    },
-    "eslint.validate": ["javascript"]
-}
