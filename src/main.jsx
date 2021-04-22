@@ -2,6 +2,10 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import * as Sentry from '@sentry/react'
 import { Integrations } from '@sentry/tracing'
+
+import { Provider } from 'react-redux'
+import store from './redux/store'
+
 import './index.css'
 import App from './App'
 
@@ -16,8 +20,8 @@ Sentry.init({
 })
 
 ReactDOM.render(
-  <React.StrictMode>
+  <Provider store={store}>
     <App />
-  </React.StrictMode>,
+  </Provider>,
   document.getElementById('root')
 )
